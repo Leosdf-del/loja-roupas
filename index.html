@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>morena flor - moda sustentável</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/flor.png">
+</head>
+<body>
+
+    <div class="rolling-text">
+        <div class="rtcontent">
+            <i class="fa-solid fa-chevron-left"></i>
+            <marquee direction="left">
+                Frete grátis nas compras acima de R$ 199,90 🚚
+            </marquee>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <header class="main-header">
+        
+        <div class="header-content">
+            <div class="logo">LOJA</div>
+            <div class="logo">
+                <img src="../img/flor.png" alt="">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="O que você procura?">
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><button class="category-btn active" data-category="todos">Todos</button></li>
+            <li><button class="category-btn" data-category="feminino">Feminino</button></li>
+            <li><button class="category-btn" data-category="masculino">Masculino</button></li>
+            <li><button class="category-btn" data-category="infantil">Infantil</button></li>
+            <li><button class="category-btn" data-category="unissex">unissex</button></li>
+        </ul>
+    </nav>
+
+   
+   
+    </div>
+
+
+
+    <main>
+        <div class="grid-prod">
+            <a href="paginas/pag1.html">
+                <div class="prod">
+                    <div class="prod-img">
+                        <img src="img/Vestido Floral Midi1.jpg" alt="">
+                    </div>
+                    <div class="prod-card">
+                        <div class="prod-name">
+                            Vestido Floral Midi </div>
+                        <div class="prod-cat">
+                            Feminino </div>
+                        <div class="prod-price">
+                            <div>
+                                <span class="price-current">
+                                    129,99</span>
+                                <span class="payment">no Pix</span>
+                            </div>
+                            <div aria-label="preço antigo" class="old-price">R$
+                                200,00</div>
+                            <div class="discount">
+                                35% off</div>
+                        </div>
+                    </div>
+
+                </div>
+            </a>
+            <a href="paginas/pag2.html">
+                <div class="prod">
+                    <div class="prod-img">
+                        <img src="img/Blusa Casual.jpg" alt="Blusa Casual">
+                    </div>
+                    <div class="prod-card">
+                        <div class="prod-name">Blusa Casual</div>
+                        <div class="prod-cat">Feminino</div>
+                        <div class="prod-price">
+                            <div>
+                                <span class="price-current">89,99</span>
+                                <span class="payment">no Pix</span>
+                            </div>
+                            <div aria-label="preço antigo" class="old-price">R$ 150,00</div>
+                            <div class="discount">40% off</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="paginas/pag3.html">
+                <div class="prod">
+                    <div class="prod-img">
+                        <img src="img/Calca Jeans.jpg" alt="Calça Jeans">
+                    </div>
+                    <div class="prod-card">
+                        <div class="prod-name">Calça Jeans</div>
+                        <div class="prod-cat">Unissex</div>
+                        <div class="prod-price">
+                            <div>
+                                <span class="price-current">159,99</span>
+                                <span class="payment">no Pix</span>
+                            </div>
+                            <div aria-label="preço antigo" class="old-price">R$ 250,00</div>
+                            <div class="discount">36% off</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="paginas/pag4.html">
+                <div class="prod">
+                    <div class="prod-img">
+                        <img src="img/Tenis Esportivo.jpg" alt="Tênis Esportivo">
+                    </div>
+                    <div class="prod-card">
+                        <div class="prod-name">Tênis Esportivo</div>
+                        <div class="prod-cat">Masculino</div>
+                        <div class="prod-price">
+                            <div>
+                                <span class="price-current">199,99</span>
+                                <span class="payment">no Pix</span>
+                            </div>
+                            <div aria-label="preço antigo" class="old-price">R$ 320,00</div>
+                            <div class="discount">38% off</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        
+    </main>
+    <footer>
+        <div class="footer-contents">
+            <ul>
+
+            <ul>
+                <h4>Ajuda</h4>
+                <li>Dúvidas Gerais</li>
+                <li>Entregas</li>
+                <li>Pedidos</li>
+                <li>Trocas e Devoluções</li>
+                <li>Pagamentos</li>
+                <li>Produtos</li>
+                <li>Corporativo</li>
+            </ul>  
+      
+            <ul>
+                <h4>Redes Sociais</h4>
+                <li>
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <i class="fa-brands fa-youtube fa-xl"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="credits">
+            <ul>
+                <li>Brasil</li>
+                <li>Política de Privacidade</li>
+                <li>Termos de Uso</li>
+            </ul>
+            <ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+            
+    <script>
+
+        // Função para criar HTML do produto
+        function createProductHTML(product) {
+            return `
+                <div class="product-card" data-category="${product.category}">
+                    <img src="${product.image}" alt="${product.name}">
+                    <h3 class="product-name">${product.name}</h3>
+                    <p class="product-price">R$ ${product.price.toFixed(2)}</p>
+                </div>
+            `;
+        }
+        document.querySelector('.search-bar input').addEventListener('input', function() {
+    const searchTerm = this.value.trim().toLowerCase();
+    document.querySelectorAll('.prod').forEach(product => {
+        const productName = product.querySelector('.prod-name').textContent.trim().toLowerCase();
+        if (productName.includes(searchTerm)) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+});
+
+        // Função para exibir produtos
+        function displayProducts(category = 'todos') {
+            const productsGrid = document.getElementById('productsGrid');
+            productsGrid.innerHTML = '';
+
+            const filteredProducts = category === 'todos'
+                ? products
+                : products.filter(product => product.category === category);
+
+            filteredProducts.forEach(product => {
+                productsGrid.innerHTML += createProductHTML(product);
+            });
+        }
+
+      // Função para exibir os produtos filtrados
+function displayProducts(category) {
+    document.querySelectorAll('.prod').forEach(product => {
+        const productCategory = product.querySelector('.prod-cat').textContent.trim().toLowerCase();
+        if (category === 'todos' || productCategory === category) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+}
+
+// Event listeners para os botões de categoria
+document.querySelectorAll('.category-btn').forEach(button => {
+    button.addEventListener('click', (e) => {
+        // Remove active de todos os botões
+        document.querySelectorAll('.category-btn').forEach(btn => 
+            btn.classList.remove('active'));
+        
+        // Adiciona active ao botão clicado
+        e.target.classList.add('active');
+        
+        // Obtém a categoria e exibe os produtos filtrados
+        const category = e.target.getAttribute('data-category');
+        displayProducts(category);
+    });
+});
+
+
+        // Event listeners para os botões
+        nextButton.addEventListener('click', nextSlide);
+        prevButton.addEventListener('click', prevSlide);
+
+        // Autoplay
+        let autoplayInterval = setInterval(nextSlide, 5000);
+
+        // Parar autoplay quando o mouse estiver sobre o carrossel
+        const carousel = document.querySelector('.carousel-container');
+        carousel.addEventListener('mouseenter', () => {
+            clearInterval(autoplayInterval);
+        });
+
+        // Retomar autoplay quando o mouse sair do carrossel
+        carousel.addEventListener('mouseleave', () => {
+            autoplayInterval = setInterval(nextSlide, 5000);
+        });
+
+        // Adicionar suporte a touch events para dispositivos móveis
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        wrapper.addEventListener('touchstart', e => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        wrapper.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeDistance = touchEndX - touchStartX;
+            if (Math.abs(swipeDistance) > 50) { // Mínimo de 50px para considerar como swipe
+                if (swipeDistance > 0) {
+                    prevSlide();
+                } else {
+                    nextSlide();
+                }
+            }
+        }
+    </script>

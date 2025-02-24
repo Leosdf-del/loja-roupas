@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestido Floral Midi</title>
+    <link rel="stylesheet" href="../css/detail.css">
+    <script src="https://kit.fontawesome.com/190633336d.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+
+        </div>
+        <nav>
+    
+            <a href="../index.html">
+            <button class="category-btn">
+                <p>pagina inicial</p>
+            </button>
+        </a>
+            <div class="shop">
+                <i class="fa-regular fa-heart fa-xl"></i>
+                <i class="fa-solid fa-bag-shopping fa-xl"></i>
+            </div>
+        </nav>
+        <div class="rolling-text">
+            <div class="rtcontent">
+                <i class="fa-solid fa-chevron-left"></i>
+                <marquee direction="left">
+                Frete gratis em compras acima de R$199,90
+                </marquee>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="product">
+            <div class="product-img">
+                <div class="large">
+                    <img src="../img/Vestido Floral Midi1.jpg" alt="" id="large">
+                </div>
+                <div class="thumbs">
+                    <div class="thumbnail" onmouseover="changeImage('1')">
+                        <img src="../img/Vestido Floral Midi1.jpg" alt="" id="thumb1">
+                    </div>
+                    <div class="thumbnail" onmouseover="changeImage('2')">
+                        <img src="../img/Vestido Floral Midi2.jpg" alt="" id="thumb2">
+                    </div>
+                    <div class="thumbnail" onmouseover="changeImage('3')">
+                        <img src="../img/Vestido Floral Midi3.jpg" alt="" id="thumb3">
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-desc">
+                <h1>Vestido Floral Midi</h1>
+                <div class="classification">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p><span>4.5</span>20 avaliações</p>
+                </div>
+                <div class="price">
+                    <h2>R$ 119,90 </h2>
+                    <h4>ou 10x de R$ 121,60 </h4>
+                </div>
+                <div class="color-selector">
+                    <div onmousedown="colorSelector('branco')" id="branco" class="choice">
+                        <img src="assets/shoes/juniper-trail-2-gore-tex-branco-1.avif" alt="">
+                    </div>
+                    <div onmousedown="colorSelector('cinza')" id="cinza" class="choice">
+                        <img src="assets/shoes/juniper-trail-2-gore-tex-cinza-1.avif" alt="">
+                    </div>
+                </div>
+                <div class="size">
+                    <h3>Tamanhos</h3>
+                    <input type="radio" class="trigger" name="size" id="P">
+                    <label for="P">P</label>
+                    <input type="radio" class="trigger" name="size" id="M" disabled>
+                    <label for="M">M</label>
+                    <input type="radio" class="trigger" name="size" id="G" disabled>
+                    <label for="G">G</label>
+                    <input type="radio" class="trigger" name="size" id="GG">
+                    <label for="GG">GG</label>
+                </div>
+                <div class="share">
+                    <a href="https://api.whatsapp.com/send/?text=Ol%C3%A1!%20Olha%20s%C3%B3%20esse%20site%20que%20eu%20criei%20na%20aula.%20https%3A%2F%2Ffhricardo.github.io%2Fnike-air-jordan%2F"
+                        target="_blank">
+                        <p>Compatilhar no <i class="fa-brands fa-whatsapp"></i> WhatsApp</p>
+                    </a>
+                </div>
+                <div class="about">
+                    <p>Este vestido floral midi traz uma combinação perfeita de romantismo e estilo moderno. Seu design em corte evasê proporciona um caimento fluido e elegante, que se adapta ao corpo de forma delicada. A estampa vibrante de flores adiciona um toque de frescor e feminilidade, tornando-o ideal para diversas ocasiões, desde um almoço ao ar livre até um evento mais casual.</p>
+                </div>
+                <div class="benefits">
+                    <input type="checkbox" id="Benefits" class="trigger">
+                    <div class="benefits-text">
+                        <label for="Benefits">
+                            <h3>Benefícios</h3>
+                            <ul class="benefit-det">
+                                <li>Estampa floral vibrante que traz frescor e elegância ao visual.</li>
+                                <li>Corte midi com caimento fluido para conforto e liberdade de movimento.</li>
+                                <li>Material leve e respirável ideal para climas quentes, proporcionando sensação de frescor o dia todo.</li>
+                                <li>Design acinturado que valoriza a silhueta, garantindo um look sofisticado e feminino.</li>
+                            </ul>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script>
+        var thisColor = "branco";
+
+        function colorSelector(color) {
+            thisColor = color;
+            for (let theImage = 1; theImage <= 8; theImage++) {
+                let thumb = document.getElementById(`thumb${theImage}`);
+                if (thumb) {
+                    thumb.src = `assets/shoes/${thisColor}-${theImage}.avif`;
+                }
+            }
+            changeImage(1);
+        }
+        
+        function changeImage(imageNumber) {
+            let largeImage = document.getElementById("large");
+            let selectedThumb = document.getElementById(`thumb${imageNumber}`);
+            if (largeImage && selectedThumb) {
+                largeImage.src = selectedThumb.src;
+            }
+        }
+    </script>
+    </main>
+    <footer>
+        <div class="footer-contents">
+            <ul>
+
+            <ul>
+                <h4>Ajuda</h4>
+                <li>Dúvidas Gerais</li>
+                <li>Entregas</li>
+                <li>Pedidos</li>
+                <li>Trocas e Devoluções</li>
+                <li>Pagamentos</li>
+                <li>Produtos</li>
+                <li>Corporativo</li>
+            </ul>  
+      
+            <ul>
+                <h4>Redes Sociais</h4>
+                <li>
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <i class="fa-brands fa-youtube fa-xl"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="credits">
+            <ul>
+                <li>Brasil</li>
+                <li>Política de Privacidade</li>
+                <li>Termos de Uso</li>
+            </ul>
+            <ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
